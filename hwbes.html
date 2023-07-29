@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/noor.css" rel="stylesheet">
+   
+  <style>
+   body{
+       background-color: rgb(206, 203, 203);
+    }
+    header{
+        background-color: rgb(6, 75, 159);
+        margin-top: -18px;
+       
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+    li{
+       margin: 20px;
+        color: white;
+    }
+    .div1{
+        background-color: white;
+        margin-left: 30px;
+        margin-right: 25px;
+        padding-bottom: 25px;
+    }
+    section{
+        background-color: rgb(6, 75, 159);
+        height: 20px;
+        color: white;   
+        padding: 5px;
+    }
+    .tab{
+        padding-left: 45%;
+        margin-top: 3px;
+    }
+   
+    .tabl{
+        padding: 8px;
+        border: 1px solid #8e8e8e;
+        margin-top: 5px;
+    }
+    .tabl .t{
+        padding: 2px;
+    }
+    .div2{
+       
+        background-color: #fff;
+    }
+    table{
+        text-align: left;
+    }
+    .tab22{
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 50px;
+        background-color: #fff;
+    }
+
+    .tabb th{
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-right: 10px;
+       width: 200px;
+    }
+    .tab22 th{
+        border-right: 1px solid #8e8e8e;
+        border-bottom: 1px solid #8e8e8e;
+    }
+    .tab22 td{
+        border-bottom: 1px solid #8e8e8e;
+    }
+    select{
+        width: 230px;
+        margin: 5px;
+        padding: 2px;
+    }
+    .inp input{
+        width: 150px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-bottom:5px;
+        margin-right: 150px;
+        padding: 2px;
+    }
+    .sele{
+        width: 50px;  
+    }
+    .int input{
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-bottom:5px;
+        margin-right: 150px;
+        padding: 2px;
+    }
+    .text textarea{
+        padding: 8px;
+        margin: 5px;
+    }
+    .but input{
+        border-radius: 50px;
+        background-color: red;
+        color: #fff;
+        border: 1px solid red;
+        padding: 2px;
+        width: 50px;
+    }
+    .button1{
+        margin-left: 1180px;
+    }
+    .div3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .a{
+        margin-left: 14px;
+    }
+    .b{
+        display: flex;
+        margin-right: 35px;
+    }
+    p{
+        margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a>MYPAGE</a></li>
+                <li><a>EMPLOYEEENGMENT</a></li>
+                <li><a>EMPLOYEEEDERECTORY</a></li>
+                <li><a>PMS</a></li>
+                <li><a>ESS</a></li>
+                <li><a>DASHBARD</a></li>
+                <li><a>DOWNLOADS</a></li>
+            </ul>
+       </nav>
+    </header>  
+    <div class="div1">
+        <section>
+            Attendance Regularisation form
+        </section>  
+        <div class="tab">
+            <table class="tabl">
+                <tr>
+                    <td class="t"><input  type="radio"name="self" checked>Self</td>
+                    <td class="t" style="border-left: 1px solid #8e8e8e;"><input  type="radio"name="OnBehalf">OnBehalf</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+       <table class="tab22" >
+                <tr class="tabb" style="background-color: #eeecec;">
+                        <th> Regularisation type</th>
+                            <td colspan="3" >
+                                <select class="select" name="select" >
+                                   <option value="-select-">-select </option>
+                               </select>
+                           </td>
+                </tr>
+                <tr>
+                    <th>From Date</th>
+                        <td class="inp" ><input  type="date"></td>
+                    <th  style="border-left: 1px solid #8e8e8e;"> To Date</th>
+                        <td class="inp" ><input type="date"></td>         
+                </tr>
+                <tr style="background-color: #eeecec;">
+                    <th>From Time</th>
+                    <td>
+                        <select class="sele">
+                            <option>Hour</option>
+                        </select> 
+                        <select class="sele" >
+                            <option>Minite</option>
+                        </select>    
+                    </td>
+                    <th  style="border-left: 1px solid #8e8e8e;"> To Time</th>
+                    <td colspan="2">
+                        <select class="sele" >
+                            <option>Hour</option>
+                        </select> 
+                    <select class="sele">
+                                <option>Minite</option>
+                    </select>
+                    </td>  
+                </tr>
+                <tr>
+                  <th>Contact No,(ifany)</th>
+                <td colspan="4" class="int">
+                <input type="number" name="9310582787" value= "9310582787">
+                </td>   
+                </tr>
+                <tr style="background-color: #eeecec;">
+                    <th>Place</th>
+                    <td colspan="4" class="text"> <textarea name="message" cols="140"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Resson</th>
+                    <td colspan="4" class="text"> <textarea name="message" cols="140"></textarea></td>
+                    
+                </tr>
+                <tr style="background-color: #eeecec;">
+                    <th>your manager</th>
+                    <td colspan="8" style="padding: 5px;">Admain netcomm labs</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="but" style="padding: 2px; border-bottom: 1px solid #fff;">
+                        <input class="button1" type="button" name="Submit" value="Submit" >
+                        <input  type="button" name="Rrset"  value="Reset">
+                    </td>
+                </tr> 
+        </table>  
+    <div class=" div3">
+        <div class="a">
+            <p>Powered by Officent</p>
+        </div>
+        <div class="b">
+            <p>Administrator</p>
+            <p>Feedback</p>
+            <p>intranet Help</p>
+        </div>
+    </div>
+    
+    </body>
+    </html>
